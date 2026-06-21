@@ -70,7 +70,11 @@ and fewer false matches.
 4. Do it 2–3 times; the latest grab wins (all are archived in `templates/`).
    Pick the cleanest one and copy it over `icon_template.png` if needed.
 
-That's it — you're ready.
+### 3. Verify — `selftest.bat`
+Run it to confirm everything works before you rely on it: it checks the
+dependencies, captures your ROI (warns if the frame is black → fullscreen issue),
+and confirms the detector scores ~1.0 on your captured icon and low on noise. All
+green = you're ready.
 
 ## Run — `start.bat`
 
