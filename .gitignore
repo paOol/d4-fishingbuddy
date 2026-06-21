@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+# captured icon images are machine/resolution specific
+icon_template.png
+templates/
+.venv/
+venv/

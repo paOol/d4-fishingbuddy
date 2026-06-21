@@ -1,0 +1,38 @@
+{
+  "keys": {
+    "cast": "f1",
+    "hook": "a",
+    "toggle": "f8",
+    "quit": "f9",
+    "capture_template": "f7"
+  },
+  "roi": {
+    "comment": "Region scanned for the fishing icon. Centered on screen, then shifted by offset. Icon shows above the character's head, so offset_y is negative (up). Tune with calibrate_roi.py.",
+    "width": 320,
+    "height": 240,
+    "offset_x": 0,
+    "offset_y": -170
+  },
+  "detection": {
+    "method": "template",
+    "comment": "method = 'template' (recommended) or 'color'. Template needs icon_template.png from capture_template.py.",
+    "template_path": "icon_template.png",
+    "match_threshold": 0.72,
+    "color": {
+      "lower_hsv": [80, 70, 110],
+      "upper_hsv": [105, 255, 255],
+      "min_pixels": 60
+    }
+  },
+  "timing": {
+    "comment": "All values in seconds. Tune to taste.",
+    "poll_interval": 0.025,
+    "settle_after_cast": 0.8,
+    "max_wait_for_icon": 14.0,
+    "reaction_delay": 0.04,
+    "after_hook_delay": 3.0,
+    "recast_delay": 1.2,
+    "humanize": true,
+    "humanize_jitter": 0.25
+  }
+}

@@ -1,0 +1,7 @@
+# D4 FishingBuddy — Windows dependencies
+# Install with:  py -m pip install -r requirements.txt
+mss>=9.0.1            # fast screen capture (works with borderless/windowed-fullscreen)
+opencv-python>=4.9.0  # template matching + color masking (pixel reading only)
+numpy>=1.24.0         # array math for detection
+keyboard>=0.13.5      # global hotkey listening (toggle on/off, quit) + template-grab key
+pydirectinput>=1.0.4  # SendInput scancode key presses that DirectX games accept
